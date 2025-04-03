@@ -13,8 +13,6 @@ rule convert_to_fasta:
     resources:
         mem_mb=512,
         runtime=60,
-    conda:
-        "../envs/vsearch.yml"
     log:
         os.path.join(
             config["log_dir"], "03-clustering", "convert_to_fasta", "{sample}.log"
