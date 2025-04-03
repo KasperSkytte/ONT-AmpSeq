@@ -1,6 +1,3 @@
-include: "common.smk"
-
-
 rule ampvis2_std_plots_sintax:
     input:
         OTU_sintax=os.path.join(
